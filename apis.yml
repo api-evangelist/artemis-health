@@ -1,8 +1,27 @@
 aid: artemis-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/artemis-health.png
 name: Artemis Health
-description: 'Artemis Health is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Artemis Health (now Artemis by Nomi Health) is a healthcare data analytics
+  platform that helps employers, benefits advisors, and health plans see every healthcare
+  dollar clearly, cut waste, and improve care for their members. The platform unifies
+  medical, pharmacy, and other benefits data to deliver cost analysis, program evaluation,
+  automated reporting, custom analytics, and social-determinants-of-health insights
+  for self-insured organizations. Artemis was acquired by Nomi Health in 2022. The
+  product is a login-gated B2B SaaS application; no public developer API, SDKs, or
+  documentation surface is published. This profile was surfaced as a portfolio company
+  of bessemer-venture-partners and enriched with the verifiable public identity, link,
+  and domain-security signals available.'
 url: https://raw.githubusercontent.com/api-evangelist/artemis-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Analytics
+- Health Data
+- Employee Benefits
+- Data Intelligence
+- Health Plans
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/artemis-health-domain-security.yml
 - type: Website
   url: https://www.artemishealth.com/
+- type: Blog
+  url: https://www.artemishealth.com/insights/blog
+- type: PrivacyPolicy
+  url: https://www.artemishealth.com/privacy-policy
+- type: Login
+  url: https://app.artemishealth.com/auth/login
+- type: Support
+  url: https://www.artemishealth.com/company/contact-us
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
